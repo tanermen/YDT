@@ -1,0 +1,60 @@
+<!--pages/register/register.wxml-->
+<view class="register">
+ <text>学员注册</text>
+  <form class="register-form"  bindsubmit="formSubmit">
+    <view class="form-item">
+      <text class="title">姓名</text>:
+      <input type="text" class="input-item"></input>
+    </view>
+    <view class="form-item">
+      <text class="title">性别</text>:
+      <radio-group class="radio-group" >
+        <label class="radio">
+          <radio value="0" color="#50b0fb" />男
+        </label>
+        <label class="radio" >
+          <radio value="1" color="#50b0fb" />女
+        </label>
+      </radio-group>
+    </view>
+    <view class="form-item">
+      <text class="title">身份证账号</text>:
+      <input type="idcard" class="input-item"></input>
+    </view>
+    <view class="form-item">
+      <text class="title">手机号</text>:
+      <input type="number" class="input-item"></input>
+    </view>
+    <view class="form-item">
+      <text class="title">是否缴费</text>:
+     <radio-group class="radio-group">
+        <label class="radio" >
+          <radio value="0" color="#50b0fb" />是
+        </label>
+        <label class="radio" >
+          <radio value="1" color="#50b0fb" />否
+        </label>
+      </radio-group>
+    </view>
+    <view class="form-item">
+      <text class="title">所属销售</text>:
+  <picker mode="selector"  bindchange="saleChange" value="{{id}}" range="{{value}}" range-key="name">
+  <view class="picker">
+      <text class="{{idx?'':'blue'}}">{{idx?value[idx].name:'请选择销售'}}{{}}</text>
+    </view>
+  </picker>
+    </view>
+    <view class="form-item">
+      <text class="title">居住地址</text>:
+     <picker mode="region" bindchange="cityChange" value="{{region}}" custom-item="{{customItem}}">
+  <view class="picker">
+     <text>{{region[0]}}，{{region[1]}}，{{region[2]}}</text> 
+    </view>
+  </picker>
+    </view>
+     <view class="form-item">
+      <text class="title">详细地址</text>:
+      <input type="text" class="input-item"></input>
+    </view>
+  </form>
+</view>

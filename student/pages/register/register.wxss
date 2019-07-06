@@ -1,0 +1,61 @@
+/* pages/register/register.wxss */
+.register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.7rem;
+  color: #333;
+  background: #50b0fb;
+}
+.register>text{
+  font-size: 1.5rem;
+  margin-bottom:0.7rem; 
+}
+.register-form{
+  width: 100%;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  border: 1rpx solid #ccc;
+  background: white;
+  text-align: center;
+}
+.form-item{
+  width: 100%;
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+}
+
+.title{
+  width: 5rem;
+  text-align: justify;
+  text-align-last: justify;
+  font-size: 0.9rem;
+}
+.title:before,.title:after{
+   display: inline-block;
+    content: '';
+    width: 100%;/*可以挤掉文字，保证不跟文字在同一行*/
+    height: 0;
+    visibility: hidden;
+}
+.input-item{
+  flex: 1;
+  margin-left: 0.5rem;
+  border-radius: 10rpx ;
+  box-shadow: 2rpx 0 3px #ccc;
+}
+.radio-group{
+  display: flex;
+  justify-content: space-around;
+  width: 10rem;
+  font-size: 0.9rem;
+}
+.picker>text{
+  font-size: 0.9rem;
+}
+.blue{
+  color:#50b0fb;
+}

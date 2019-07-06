@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/register/register",
+    "pages/about/about",
+    "pages/index/index",
+    "pages/practice/practice",
+    "pages/Pay/Pay",
+    "pages/subscribe/subscribe"
+  ],
+  "tabBar": {
+    "color":"#202020",
+    "selectedColor": "#fff",
+    "borderStyle": "white",
+    "backgroundColor": "#0090ff",
+    "list": [
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "/assets/images/shuben.png",
+        "selectedIconPath": "/assets/images/shuben1.png"
+      },
+      {
+        "pagePath": "pages/practice/practice",
+        "text": "练习",
+        "iconPath": "/assets/images/ceshi.png",
+        "selectedIconPath": "/assets/images/ceshi1.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "/assets/images/geren.png",
+        "selectedIconPath": "/assets/images/geren1.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0090ff",
+    "navigationBarTitleText": "一道通学员端",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}
